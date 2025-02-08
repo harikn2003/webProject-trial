@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script type="text/javascript">
+      window.tailwind.config = {
+        darkMode: ['class'],
+        theme: {
+          extend: {
+            colors: {
+              background: '#f0fff4',
+              foreground: '#065f46',
+              primary: {
+                DEFAULT: '#10b981',
+                foreground: '#ffffff'
+              },
+              secondary: {
+                DEFAULT: '#34d399',
+                foreground: '#065f46'
+              },
+              accent: {
+                DEFAULT: '#6ee7b7',
+                foreground: '#065f46'
+              },
+              card: {
+                DEFAULT: '#ffffff',
+                foreground: '#065f46'
+              },
+              input: '#d1fae5',
+              border: '#6ee7b7'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="flex flex-col items-center justify-center min-h-screen bg-background p-4">
+    <img class="h-24 mb-4" src="/POS-LOGO.png" alt="POS Logo" />
+    <p class="text-foreground text-lg font-semibold mb-4">Your Trusted POS Solution</p>
+    <div class="flex space-x-2 mb-4">
+      <button class="px-6 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/80 transition duration-200">Login</button>
+      <button class="px-6 py-2 rounded-lg bg-secondary text-secondary-foreground hover:bg-secondary/80 transition duration-200">Sign Up</button>
+    </div>
+    <div class="bg-card p-8 rounded-lg shadow-lg w-full max-w-sm border border-border">
+      <input type="text" placeholder="Username" class="w-full bg-input text-foreground placeholder-foreground rounded-lg px-4 py-3 mb-4 border border-border focus:outline-none focus:ring focus:ring-primary" />
+      <input type="password" placeholder="Password" class="w-full bg-input text-foreground placeholder-foreground rounded-lg px-4 py-3 mb-6 border border-border focus:outline-none focus:ring focus:ring-primary" />
+      <button class="w-full bg-primary text-primary-foreground rounded-lg py-3 hover:bg-primary/80 transition duration-200">Login</button>
+    </div>
+  </body>
+</html>
